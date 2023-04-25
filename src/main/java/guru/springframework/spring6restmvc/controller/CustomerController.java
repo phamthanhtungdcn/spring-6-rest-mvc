@@ -22,6 +22,7 @@ public class CustomerController {
 
     @RequestMapping(method = RequestMethod.GET)
     public List<Customer> listCustomer(){
+        log.debug("Customer controller here 123");
         return customerService.listCustomers();
     }
 
