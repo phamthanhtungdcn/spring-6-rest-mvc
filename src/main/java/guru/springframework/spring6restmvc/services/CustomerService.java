@@ -10,4 +10,8 @@ public interface CustomerService {
     List<Customer> listCustomers();
 
     Customer getCustomerById(UUID id);
+
+    Customer creatNewCustomer(Customer customer);
+
+    void updateCustomerById(UUID id, Customer customer);
 }
