@@ -44,7 +44,7 @@ public class CustomerController {
 
     @PostMapping
     public ResponseEntity handlePost(@RequestBody Customer customer){
-        Customer savedCustomer = customerService.creatNewCustomer(customer);
+        Customer savedCustomer = customerService.createNewCustomer(customer);
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Location", "/api/v1/customer/" + savedCustomer.getId().toString());

@@ -41,6 +41,13 @@ class BeerControllerTest {
     }
 
     @Test
+    void testUpdateBeerById(){
+        Beer beer = beerServiceImpl.listBeers().get(0);
+
+
+    }
+
+    @Test
     void testCreateNewBeer() throws Exception {
         Beer beer = beerServiceImpl.listBeers().get(0);
         beer.setVersion(null);
